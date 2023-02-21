@@ -1,5 +1,5 @@
-import { createNewStats, findVideoIdByUser, updateStats } from '@/lib/db/hasura';
-import { verifyToken } from '@/lib/utils';
+import { createNewStats, findVideoIdByUser, updateStats } from '../../lib/db/hasura';
+import { verifyToken } from '../../lib/utils';
 
 export default async function Stats(req, res) {
 

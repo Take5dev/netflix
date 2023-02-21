@@ -1,16 +1,16 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import Banner from '@/components/banner/Banner'
-import NavBar from '@/components/nav/NavBar'
-import SectionCards from '@/components/card/SectionCards'
+import styles from '../styles/Home.module.css'
+import Banner from '../components/banner/Banner'
+import NavBar from '../components/nav/NavBar'
+import SectionCards from '../components/card/SectionCards'
 
 import classes from '../styles/Home.module.css'
-import { getVideos, getPopularVideos, getWatchItAgainVideos } from '@/lib/videos'
-import useRedirectUser from '@/utils/redirect-user'
+import { getVideos, getPopularVideos, getWatchItAgainVideos } from '../lib/videos'
+import UseRedirectUser from '../utils/redirect-user'
 
 export async function getServerSideProps(context) {
 
-  const { userId, token } = await useRedirectUser(context);
+  const { userId, token } = await UseRedirectUser(context);
   // if (!userId) {
   //   return {
   //     props: {},

@@ -8,8 +8,8 @@ const SectionCards = (props) => {
     return <section className={classes.container}>
         <h2 className={classes.title}>{title}</h2>
         <div className={cls(classes.cardWrapper, wrap && classes.wrap)}>
-            {videos.map((item, index) => <Link href={`/video/${item.id}`}>
-                <Card key={`key-${index}`} id={`img-${index}`} imgUrl={item.imgUrl} size={size} shouldScale={shouldScale} />
+            {videos.map((item, index) => <Link key={`key-${index}`} href={`/video/${item.id}`}>
+                <Card id={`img-${index}`} imgUrl={item.imgUrl} size={size} shouldScale={shouldScale} />
             </Link>)}
         </div>
     </section>

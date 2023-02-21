@@ -58,11 +58,11 @@ const NavBar = () => {
     }
     return <div className={classes.container}>
         <div className={classes.wrapper}>
-            <a className={classes.logoLink} href="/">
+            <Link className={classes.logoLink} href="/">
                 <span className={classes.logo}>
                     <Image src="/static/netflix.svg" alt="Netflix" title='Netflix' width={128} height={34} />
                 </span>
-            </a>
+            </Link>
             <ul className={classes.navItems}>
                 <li className={classes.navItem} onClick={handleOnClickHome}>Home</li>
                 <li className={classes.navItem} onClick={handleOnClickMyList}>My List</li>

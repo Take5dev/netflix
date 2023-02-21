@@ -1,5 +1,5 @@
-import Loading from '@/components/loading/Loading';
-import '@/styles/globals.css'
+import Loading from '../components/loading/Loading';
+import '../styles/globals.css';
 import { Roboto_Slab } from '@next/font/google';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';

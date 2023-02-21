@@ -4,10 +4,10 @@ import Modal from 'react-modal';
 import classes from '../../styles/Video.module.css';
 
 import cls from 'classnames';
-import { getYoutubeVideoByID } from "@/lib/videos";
-import NavBar from "@/components/nav/NavBar";
-import Like from "@/components/icons/Like";
-import DisLike from "@/components/icons/Dislike";
+import { getYoutubeVideoByID } from "../../lib/videos";
+import NavBar from "../../components/nav/NavBar";
+import Like from "../../components/icons/Like";
+import DisLike from "../../components/icons/Dislike";
 import { useEffect, useState } from "react";
 
 Modal.setAppElement('#__next');

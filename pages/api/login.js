@@ -1,6 +1,6 @@
-import { setTokenCookie } from "@/lib/cookies";
-import { createNewUser, isNewUser } from "@/lib/db/hasura";
-import { magicAdmin } from "@/lib/magic-admin";
+import { setTokenCookie } from "../../lib/cookies";
+import { createNewUser, isNewUser } from "../../lib/db/hasura";
+import { magicAdmin } from "../../lib/magic-admin";
 import jwt from 'jsonwebtoken';
 
 export default async function Login(req, res) {

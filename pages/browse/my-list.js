@@ -1,14 +1,14 @@
-import SectionCards from "@/components/card/SectionCards";
-import NavBar from "@/components/nav/NavBar";
-import { getUserListVideos } from "@/lib/videos";
-import useRedirectUser from "@/utils/redirect-user";
+import SectionCards from "../../components/card/SectionCards";
+import NavBar from "../../components/nav/NavBar";
+import { getUserListVideos } from "../../lib/videos";
+import UseRedirectUser from "../../utils/redirect-user";
 import Head from "next/head";
 
 import classes from '../../styles/MyList.module.css';
 
 export async function getServerSideProps(context) {
 
-    const { userId, token } = await useRedirectUser(context);
+    const { userId, token } = await UseRedirectUser(context);
     // if (!userId) {
     //     return {
     //         props: {},
