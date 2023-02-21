@@ -3,7 +3,7 @@ import { verifyToken } from "./lib/utils";
 
 export async function middleware(req, ev) {
     const token = req ? req.cookies.get("token") : null;
-    const userId = await verifyToken(token.value);
+    const userId = await verifyToken(token ? token.value : null);
     const { pathname } = req.nextUrl;
 
     if (
